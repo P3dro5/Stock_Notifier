@@ -31,32 +31,7 @@ built with modern Android architecture.
 2. Sign up for a free account
 3. Copy your **Access Key**
 
-### 2. Set your API Key
-
-Open `app/build.gradle.kts` and replace the placeholder:
-
-```kotlin
-buildConfigField("String", "MARKETSTACK_API_KEY", "\"YOUR_API_KEY_HERE\"")
-```
-
-Or (recommended) add to `local.properties`:
-
-```
-MARKETSTACK_API_KEY=your_actual_key_here
-```
-
-Then update `build.gradle.kts`:
-
-```kotlin
-import java.util.Properties
-val localProps = Properties().apply {
-    load(rootProject.file("local.properties").inputStream())
-}
-buildConfigField("String", "MARKETSTACK_API_KEY",
-    "\"${localProps["MARKETSTACK_API_KEY"] ?: ""}\"")
-```
-
-### 3. Open in Android Studio
+### 2. Open in Android Studio
 
 - Open **Android Studio Panda 4 | 2025.3.4**
 - File → Open → select the `StockWidget` folder
