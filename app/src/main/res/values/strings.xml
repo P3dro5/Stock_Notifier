@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StockWidget</string>
+    <string name="widget_name">Stock Tracker Widget</string>
+    <string name="widget_description">Displays live stock prices on your home screen</string>
+</resources>
